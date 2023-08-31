@@ -51,7 +51,7 @@ vector<vector<double>> generar(int num, int n) {
 }
 
 int main() {
-  
+  //unicamente cambiando de 5000 a las demas dimensiones y el nombre del archivo generado txt.
     vector<vector<double>> puntos = generar(100, 5000);
     calcularDistancias(puntos, "resultados 5000.txt");
 
