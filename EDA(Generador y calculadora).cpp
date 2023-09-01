@@ -6,7 +6,7 @@
 #include <fstream>
 
 using namespace std;
-
+//Calculando la distancia de 2 puntos en N dimensiones
 double distancia(const vector<double>& punto1, const vector<double>& punto2) {
     double res = 0;
     for (size_t i = 0; i < punto1.size(); ++i) {
@@ -16,6 +16,7 @@ double distancia(const vector<double>& punto1, const vector<double>& punto2) {
     return sqrt(res);
 }
 
+//Calculamos Distancias: empareja los puntos para pasarlos por distancia y se almacena el resultado en un txt que se crea automaticamente
 void calcularDistancias(const vector<vector<double>>& puntos, const string& txt) {
     int numPuntos = puntos.size();
     //int total_op = 0;
